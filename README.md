@@ -1,9 +1,10 @@
 # python_to_optimized_cpp_LLM
 
-Convert Python snippets into high?performance C++ using OpenAI models, with a notebook workflow and a simple Gradio UI.
+Convert Python snippets into high-performance C++ using OpenAI models, with a notebook workflow and a styled Gradio UI.
 
 ## What?s inside
 - `cpp_code_generator.ipynb`: main workflow (prompting, conversion, compile/run helpers, and Gradio UI).
+- `styles.py`: CSS used by the Gradio interface.
 - `system_info.py`: gathers OS/CPU/toolchain details to tailor compile advice.
 - `pyproject.toml` + `uv.lock`: dependency definitions.
 
@@ -26,7 +27,7 @@ The notebook:
 The model is selected by `OPENAI_MODEL` in the notebook.
 
 ## Gradio UI
-The UI lets you paste Python code and get C++ output. Run the final cell to launch:
+The UI lets you paste Python code and get C++ output, run Python locally, and compile/run the generated C++. It uses a Monochrome theme plus custom CSS from `styles.py`. Run the final cell to launch:
 - `ui.launch(inbrowser=True)`
 
 ## Notes
